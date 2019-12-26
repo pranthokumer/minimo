@@ -1,0 +1,294 @@
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*font-family: 'Inconsolata', monospace;*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+}
+/*header start*/
+header{
+    padding: 30px 0;
+/*    border: 1px solid black;*/
+
+}
+.wrapper{
+    width:90%;
+/*    border: 1px solid red;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo{
+    width: 15%;
+/*    border: 1px solid black;*/
+    float: left;
+}
+.logo img{
+    width: 100%;
+}
+.menu{
+    width:70%;
+/*    border: 1px solid black;*/
+    float: right;
+    margin-top: 11px;
+}
+.menu ul{
+    float: right;
+    margin: 0;
+}
+.menu ul li{
+    float: left;
+    list-style:none;
+}
+.menu ul li a{
+    color: #626262;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 60px;
+}
+.menu ul li a::after {
+    content: '';
+    display: block;
+    width:0;
+    height: 3px;
+    background: #000;
+    transition: width .3s;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+/*
+.menu ul li a:hover{
+    color: black;
+}
+*/
+.menu ul li:last-child a{
+    padding-right: 0;
+}
+/*header end*/
+/*banner start*/
+.banner{
+    
+}
+.b_img{
+/*    border: 1px solid red;*/
+}
+.b_img img{
+    width: 100%;
+}
+/*banner end*/
+/*gateway start*/
+.gateway{
+    padding-top:65px;
+    padding-bottom: 65px;
+/*    background: black;*/
+}
+.wrapper2{
+/*    position: relative;*/
+    width: 80%;
+/*    border: 1px solid red;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+.g_content{}
+.light{
+    font-family: 'ubuntu',sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.c_title{
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.c_text{
+    line-height: 25px;
+    word-spacing: 2px;
+}
+/*gateway end*/
+/*blog start*/
+.blog{
+    
+}
+.single{
+    width: 45%;
+/*    border: 1px solid red;*/
+    float: left;
+    padding: 50px 0;
+}
+.single:nth-child(even){
+/*    background-color: aqua;*/
+    margin-left: 10%;
+}
+.single img{
+    width:100%;
+}
+
+/*blog end*/
+/*newsletter start*/
+.newsletter{
+    background:#f0f0f0;
+    margin: 50px 0;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    
+}
+.n_content{
+    text-align: center;
+    width:500px;
+/*    border: 1px solid red;*/
+    margin:0 auto;
+}
+.n_title{
+    font-size: 30px;
+    color: black;
+}
+.form{
+    margin-top: 65px;
+    margin-right: 40px;
+}
+.email{
+    font-size: 16px;
+    width: 320px;
+    border: none;
+    background: transparent;
+    padding:10px 50px 5px 3px;
+    
+    border-bottom:2px solid black;
+}
+input:focus,select:focus, button:focus, textarea:focus{
+    outline:none;
+}
+.e_button{
+    background: transparent;
+    border: none;
+    margin: -40px;
+}
+.e_button img{}
+/*newsletter end*/
+/*blog2 start*/
+.button{
+    text-align: center;
+    padding: 65px 0;
+}
+.button a{
+    font-weight: 400;
+    font-size: 20px;
+    color: #626262;
+    text-decoration:none;
+    padding: 7px 25px;
+    border: 1px solid #626262;
+    transition: .5s;
+}
+.button a:hover{
+    color: white;
+    background-color: #626262;
+}
+/*blog2 end*/
+
+/*footer start*/
+.footer{
+    background-color: #f0f0f0;
+    padding: 30px 0;
+}
+.f_content{
+    
+}
+.f_menu{
+    left: 0;
+}
+.f_menu ul{}
+.f_menu ul li{
+    float: left;
+    list-style: none;
+}
+.f_menu ul li a{
+    text-decoration: none;
+    color: #626262;
+    padding-left: 15px;
+}
+.f_menu ul li:first-child a{
+/*    background-color: aqua;*/
+    padding-left: 0;
+}
+
+/*f_footer link hover*/
+.f_menu ul li a{
+    color: #626262;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    
+}
+.f_menu ul li a::after {
+    content: '';
+    display: block;
+    width:0;
+    height: 3px;
+    background: #000;
+    transition: width .3s;
+}
+
+.f_menu ul li a:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+/*hover top*/
+.f_menu ul li a{
+    color: #626262;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    
+}
+.f_menu ul li a::before {
+    content: '';
+    display: block;
+    width:0;
+    height: 3px;
+    background: #000;
+    transition: width .3s;
+}
+
+.f_menu ul li a:hover::before {
+    width: 100%;
+    //transition: width .3s;
+}
+/*f_footer link hover*/
+
+.social{
+    position: absolute;
+    
+    float: right;
+    right: 100px;
+    
+}
+.social p{
+    position: relative;
+    top: -5px;
+    font-weight: 700;
+    color: black;
+    display: inline;
+}
+.s_links{
+    display: inline;
+}
+.s_links a img{
+    width: 20px;
+    padding: 0 5px;
+    
+}
+/*footer end*/
+
+
+
